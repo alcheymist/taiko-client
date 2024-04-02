@@ -1,5 +1,22 @@
 # Changelog
 
+## [0.21.0](https://github.com/taikoxyz/taiko-client/compare/v0.20.0...v0.21.0) (2024-04-02)
+
+
+### Features
+
+* **bindings:** bump bindings ([#671](https://github.com/taikoxyz/taiko-client/issues/671)) ([16fe52a](https://github.com/taikoxyz/taiko-client/commit/16fe52a94337ab27a53c8c6213a6c13702b79171))
+* **bindings:** update Go contract bindings ([#680](https://github.com/taikoxyz/taiko-client/issues/680)) ([b64bf1a](https://github.com/taikoxyz/taiko-client/commit/b64bf1a6a5a5ebce0c312d40ea13155db55d0b21))
+* **driver:** improve driver implementation ([#672](https://github.com/taikoxyz/taiko-client/issues/672)) ([55717c8](https://github.com/taikoxyz/taiko-client/commit/55717c8ff8c9541640c5368c2e937451ae6af7aa))
+* **pkg:** update `WaitTillL2ExecutionEngineSynced` ([#677](https://github.com/taikoxyz/taiko-client/issues/677)) ([2c2b996](https://github.com/taikoxyz/taiko-client/commit/2c2b996be04d445b289a9c65aebb01f4afd1ed3b))
+
+
+### Bug Fixes
+
+* **pkg:** remove redundant alias ([#665](https://github.com/taikoxyz/taiko-client/issues/665)) ([bd1c324](https://github.com/taikoxyz/taiko-client/commit/bd1c3241554cbbf3a905a3cf1554368870dacf9e))
+* **prover:** do not retry when the status in receipt is not `types.ReceiptStatusSuccessful` ([#675](https://github.com/taikoxyz/taiko-client/issues/675)) ([5f91e0e](https://github.com/taikoxyz/taiko-client/commit/5f91e0e4f2788b71f3ea6c814171a0d4532c0918))
+* **prover:** fix a check in `isValidProof()` ([#679](https://github.com/taikoxyz/taiko-client/issues/679)) ([16857ba](https://github.com/taikoxyz/taiko-client/commit/16857ba2d07bc969223f90fcd20c5dbae084beaa))
+
 ## [0.20.0](https://github.com/taikoxyz/taiko-client/compare/v0.19.0...v0.20.0) (2024-03-28)
 
 
