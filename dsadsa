@@ -1,0 +1,20 @@
+import "@taiko/taiko-sdk-solidity/IPyth.sol";
+import "@taiko/xyz-sdk-solidity/PythStructs.sol";
+
+contract ExampleContract {
+    Itaiko taiko;
+
+    constructor(address pythContract) {
+        taiko = Itaiko(pythContract);
+    }
+
+    function getBtcUsdPrice(
+        bytes[] calldata priceUpdateData
+    ) public payable returns (taikoStructs.Price memory) {
+        uint fee = taiko.getUpdateFee(priceUpdateData);
+        pyth.updatePriceFeeds{value: fee}(priceUpdateData);
+
+        bytes32 priceID = 0xf9c0172ba10dfa4d19088d94f5bf61d3b54d5bd7483a322a982e1373ee8ea31b;
+        return taiko.getPrice(priceID);
+    }
+}
